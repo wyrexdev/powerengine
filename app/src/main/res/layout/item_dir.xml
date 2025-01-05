@@ -1,0 +1,34 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="25dp"
+	android:gravity="center_vertical"
+>
+
+		<ImageView
+			android:id="@+id/iv_arrow"
+			android:focusable="false"
+			android:layout_width="12dp"
+			android:layout_height="12dp"
+			android:src="@drawable/arrow"
+			android:scaleType="fitXY" />
+		<ImageView
+			android:id="@+id/imageview2"
+			android:focusable="false"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_marginLeft="2dp"
+			android:src="@drawable/folder"
+			android:scaleType="fitXY" />
+		<TextView
+			android:id="@+id/tv_name"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="2dp"
+			android:text="Main Storage"
+			android:textSize="15sp"
+			android:textColor="#000000" />
+</LinearLayout>

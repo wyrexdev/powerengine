@@ -1,0 +1,214 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:background="#212121"
+		android:gravity="right"
+		android:orientation="horizontal">
+		<ScrollView
+			android:id="@+id/leftside"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<RelativeLayout
+					android:id="@+id/linear3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<androidx.viewpager.widget.ViewPager
+						android:id="@+id/viewpager_slider"
+						android:layout_width="match_parent"
+						android:layout_height="200dp" />
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="200dp"
+						android:gravity="center_horizontal|bottom"
+						android:orientation="horizontal">
+						<androidx.recyclerview.widget.RecyclerView
+							android:id="@+id/recyclerview1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="10dp" />
+					</LinearLayout>
+				</RelativeLayout>
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="3D Modular Buildings"
+					android:textSize="20sp"
+					android:textColor="#B0BEC5"
+					android:singleLine="true" />
+				<LinearLayout
+					android:id="@+id/space"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:padding="8dp"
+					android:background="#757575"
+					android:orientation="horizontal" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="	\n\n	3D Modular buildings\n\n	by  Kenney Vleugels (Kenney.nl)\n\n			------------------------------\n\n	License (Creative Commons Zero, CC0)\n	http://creativecommons.org/publicdomain/zero/1.0/\n\n	You may use these assets in personal and commercial projects.\n	Credit (Kenney or www.kenney.nl) would be nice but is not mandatory.\n\n			------------------------------\n\n	Donate:   http://support.kenney.nl\n	Request:  http://request.kenney.nl\n\n	Follow on Twitter for updates:\n	\@KenneyNL"
+					android:textSize="12sp"
+					android:textColor="#B0BEC5" />
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:id="@+id/rightside"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="#212121"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear11"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<de.hdodenhof.circleimageview.CircleImageView
+						android:id="@+id/circleimageview1"
+						android:layout_width="80dp"
+						android:layout_height="80dp"
+						android:src="@drawable/app_logo_white"
+						app:civ_border_width="2dp"
+						app:civ_border_color="#626262"
+						app:civ_circle_background_color="#313131"
+						app:civ_border_overlay="true" />
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Username"
+						android:textSize="20sp"
+						android:textColor="#B0BEC5" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/version"
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="v1.5"
+						android:textSize="12sp"
+						android:textColor="#B0BEC5" />
+					<LinearLayout
+						android:id="@+id/space1"
+						android:layout_width="1dp"
+						android:layout_height="25dp"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:background="#757575"
+						android:orientation="vertical" />
+					<LinearLayout
+						android:id="@+id/down_bg"
+						android:layout_width="wrap_content"
+						android:layout_height="35dp"
+						android:paddingLeft="8dp"
+						android:paddingRight="2dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/imageview1"
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							android:src="@drawable/download"
+							android:scaleType="fitXY" />
+						<TextView
+							android:id="@+id/down_sayisi"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_vertical"
+							android:text="1.383"
+							android:textSize="12sp"
+							android:textColor="#B0BEC5"
+							android:singleLine="true" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/space2"
+						android:layout_width="1dp"
+						android:layout_height="25dp"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:background="#757575"
+						android:orientation="vertical" />
+					<LinearLayout
+						android:id="@+id/linear13"
+						android:layout_width="match_parent"
+						android:layout_height="35dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<RatingBar
+							android:id="@+id/ratingbar1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="2dp"
+							android:orientation="vertical"
+							style="@android:attr/ratingBarStyleSmall"
+							android:isIndicator="false"
+							android:max="5"
+							android:numStars="5"
+							android:scaleX=".5"
+							android:scaleY=".5"
+							android:progressBackgroundTint="#ff505055"
+							android:progressTint="#FFEB3B"
+							android:secondaryProgressTint="#ff505055" />
+						<TextView
+							android:id="@+id/rating"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="3dp"
+							android:text="0.0"
+							android:textSize="16sp"
+							android:textColor="#B0BEC5"
+							android:singleLine="true" />
+					</LinearLayout>
+				</LinearLayout>
+				<Button
+					android:id="@+id/button1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Free"
+					android:textSize="20sp"
+					android:textColor="#000000"
+					android:backgroundTint="#4CAF50" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
